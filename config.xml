@@ -23,9 +23,9 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="14" />
     <preference name="android-installLocation" value="auto" />
+    
     <gap:plugin name="org.apache.cordova.console" />
     <gap:plugin name="org.apache.cordova.inappbrowser" />
-    
     <plugin name="com.ququplay.websocket.websocket" spec="0.1.0" source="pgb" />
     
     
@@ -33,7 +33,6 @@
     
     
     <access origin="*" />
-    <plugin name="cordova-plugin-whitelist" version="1" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
