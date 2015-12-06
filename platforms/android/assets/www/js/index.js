@@ -144,7 +144,7 @@ function wsUpdate(event){
     } else if (e.type == "delete"){
         var t = e.payload.replace("LiveUpdate_", "")
         console.log("#up-"+t)
-        $("#up-"+t).remove();
+        $("#up-"+t).fadeOut();
     } else if (e.type == "strike"){
         var t = e.payload.replace("LiveUpdate_", "")
         console.log("#up-"+t)
@@ -173,7 +173,11 @@ function renderUpdate(j, live){
     }*/
     
     //ToDo: format time    
-    $(ele).append("<i class='authtime'>/u/"+j.data.author+" at "+j.data.created+"</i>")
+    var d = new Date(j.data.created_utc * 1000)
+    console.log(d);
+    var ago = jQuery.timeago(d);
+    
+    $(ele).append("<i class='authtime'>/u/"+j.data.author+" <abbr class='timeago' title='"+d+"'>"+ago+"</abbr></i>")
     
     $("a", ele).click(function(e){
         e.preventDefault()

@@ -25,3 +25,7 @@ html, body{
     width: 90%;
     margin: 0 auto;
 }
+
+abbr{
+    border: none !important;   
+}
