@@ -7,11 +7,13 @@
     <author email="ben@helloben.co" href="http://helloben.co">
         Ben Stobaugh
     </author>
-    <content src="www/index.html" />
+    
+    <content src="index.html" />
+    
     <preference name="permissions" value="none" />
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
-    <preference name="fullscreen" value="true" />
+    <preference name="fullscreen" value="false" />
     <preference name="webviewbounce" value="true" />
     <preference name="prerendered-icon" value="true" />
     <preference name="stay-in-webview" value="false" />
@@ -24,17 +26,18 @@
     <preference name="android-minSdkVersion" value="14" />
     <preference name="android-installLocation" value="auto" />
     
-    <gap:plugin name="org.apache.cordova.console" />
+    
     <gap:plugin name="org.apache.cordova.inappbrowser" />
-    <plugin name="com.ququplay.websocket.websocket" spec="0.1.0" source="pgb" />
     
     
-    <icon src="icon.png" />
-    
-    
+    <icon src="rl-icon.png" />
     <access origin="*" />
-    <allow-intent href="http://*/*" />
+    
+    <!--<plugin name="cordova-plugin-whitelist"/>-->    
+    <!--<allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+    <allow-intent href="wss://*/*" />
+    <allow-intent href="ws://*/*" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
@@ -45,5 +48,5 @@
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
-    </platform>
+    </platform>-->
 </widget>

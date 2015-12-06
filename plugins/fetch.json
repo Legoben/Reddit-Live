@@ -1,26 +1,24 @@
 {
-    "cordova-plugin-whitelist": {
+    "de.appplant.cordova.plugin.local-notification": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-whitelist@1"
+            "id": "de.appplant.cordova.plugin.local-notification@0.8.0"
         },
         "is_top_level": true,
         "variables": {}
     },
-    "com.ququplay.websocket.WebSocket": {
+    "cordova-plugin-device": {
         "source": {
-            "type": "git",
-            "url": "https://github.com/mkuklis/phonegap-websocket",
-            "subdir": "."
+            "type": "registry",
+            "id": "cordova-plugin-device"
         },
-        "is_top_level": true,
+        "is_top_level": false,
         "variables": {}
     },
-    "com.phonegap.plugins.PushPlugin": {
+    "cordova-plugin-inappbrowser": {
         "source": {
-            "type": "git",
-            "url": "https://github.com/phonegap-build/PushPlugin.git",
-            "subdir": "."
+            "type": "registry",
+            "id": "cordova-plugin-inappbrowser"
         },
         "is_top_level": true,
         "variables": {}
